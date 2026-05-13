@@ -42,11 +42,15 @@ requiring the player to kill all monsters again on the next visit.
 
 ## Running
 
+From the project root:
+
 ```bash
 go run cmd/main.go
 ```
 
 ## Running Tests
+
+From the project root:
 
 ```bash
 # All tests
