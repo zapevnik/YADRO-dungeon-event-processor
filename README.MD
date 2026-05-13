@@ -53,17 +53,11 @@ go run cmd/main.go
 From the project root:
 
 ```bash
-# All tests
+# All tests (tests only in internal/processor)
 go test ./...
 
 # With verbose output
 go test -v ./...
-
-# Processor package only (tests only here)
-go test -v ./internal/processor/
-
-# A single test by name
-go test -run TestFullRun_Success ./internal/processor/
 ```
 
 ## Config Format (`config.json`)
@@ -91,7 +85,7 @@ Each line follows the pattern: `[HH:MM:SS] <playerID> <eventID> [extraParam]`
 ```
 [14:00:00] 1 1
 [14:10:00] 1 2
-[14:15:00] 1 11 30
+[14:15:00] 2 2
 ```
 
 ## Sample Output
